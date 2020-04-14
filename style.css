@@ -1,5 +1,60 @@
 /* style.css */
 
-.body {
-    font-family: "Open Sans";
+body {
+    font-family: "Helvetica Neue";
+    padding: 20px;
+    background-color: rgb(240, 240, 240);
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav:link, .nav:visited {
+    background-color: rgb(68, 190, 190);
+    color: white;
+    padding: 8px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+.nav:hover, .nav:active {
+    background-color: rgb(35, 116, 116);
+}
+
+.socials:link,.socials:visited,.socials:hover,.socials:active {
+    text-decoration: none;
+}
+
+.title {
+    background-color: white;
+    text-align: center;
+    font-size: 24px;
+    padding: 1px 30px 1px 30px;
+    margin-top: 30px;
+}
+  
+.article {
+    background-color: white;
+    padding: 1px 30px 30px 30px;
+    margin: 20px 10px;
+}
+  
+
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 50%;
+} 
+  
