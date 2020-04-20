@@ -4,6 +4,7 @@ body {
     font-family: "Helvetica Neue";
     padding: 20px;
     background-color: rgb(240, 240, 240);
+    margin: auto;
 }
 
 ul {
@@ -35,26 +36,48 @@ li {
     text-decoration: none;
 }
 
+h2 {
+    padding: 0px;
+    margin: 0px;
+}
+
 .title {
     background-color: white;
     text-align: center;
     font-size: 24px;
-    padding: 1px 30px 1px 30px;
-    margin-top: 30px;
+    margin: auto;
 }
   
+.lowerBody {
+    margin: auto;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
 .article {
     background-color: white;
-    padding: 1px 30px 30px 30px;
-    margin: 20px 10px;
+    padding: 20px;
+    margin: auto;
 }
-  
 
 .row {
     display: flex;
+    display: inline-flex;
 }
   
 .column {
-    flex: 50%;
+    display: inline-grid;
 } 
+
+img {
+    max-width: 100%;
+}
   
+iframe {
+    width: 100%;
+    height: auto;
+}
