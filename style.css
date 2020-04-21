@@ -144,7 +144,8 @@ iframe {
   
 
   @media only screen and (max-width: 600px) {
-    
-
+    .article2:first-child {
+        margin-right: 0px;
+    }    
   }
   
