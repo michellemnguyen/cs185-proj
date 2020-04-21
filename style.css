@@ -80,14 +80,14 @@ h2 {
     margin: auto;
     text-align: center;
     display: flex;
+    flex-wrap: wrap;
 }
 
 /* flex child */
 .article {
     background-color: white;
     padding: 20px;
-    flex: 2;
-    overflow: auto;
+    flex: 1;
 }
 
 /* flex child 1/2's */
@@ -144,10 +144,7 @@ iframe {
   
 
   @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
-
+    
 
   }
   
