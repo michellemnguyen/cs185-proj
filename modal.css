@@ -21,8 +21,7 @@
     position: fixed;
     text-align: center;
     z-index: 1;
-    padding: 25px 0px 25px 0;
-    margin: auto;
+    /* padding: 25px 0px 25px 0; */
     left: 0;
     top: 0;
     width: 100%;
@@ -32,10 +31,10 @@
   /* Modal Content */
   .modal-content {
     position: relative;
-    background-color: inherit;
+    background-color: none;
     margin: auto;
-    width: 70%;
-    max-width: 80%;
+    align-content: center;
+    width: 50%;
   }
 
   #myModal {
@@ -67,6 +66,7 @@
   /* Next & previous buttons */
   .prev,
   .next {
+    display: none;
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -84,6 +84,7 @@
   
   /* Position the "next button" to the right */
   .next {
+    display: none;
     right: 0;
     border-radius: 3px 0 0 3px;
   }
