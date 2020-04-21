@@ -1,12 +1,18 @@
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scrollFunction()}
 
 function scrollFunction() {
   //Get the button:
   var mybutton = document.getElementById("myBtn");
 
-  if (document.body.scrollTop > 20) {
+  // get percent scrolled
+//   var scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
+//   var pctScrolled = Math.floor(scrollTop/trackLength * 100);
+
+//   var pxScrolled = document.body.scrollTop;
+
+  if (document.body.scrollTop > 200) {
     mybutton.style.display = "none";
   } else {
     mybutton.style.display = "block";

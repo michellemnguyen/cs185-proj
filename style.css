@@ -30,7 +30,7 @@ li {
     padding: 8px 24px;
     text-align: center;
     text-decoration: none;
-    font-size: 20x;
+    font-size: 24x;
     font-weight: bold;
     display: inline-block;
   }
@@ -48,7 +48,7 @@ li {
     padding: 8px 24px;
     text-align: center;
     text-decoration: none;
-    font-size: 20x;
+    font-size: 24x;
     font-weight: bold;
     display: inline-block;
 }
@@ -86,7 +86,7 @@ h2 {
 .article {
     background-color: white;
     padding: 20px;
-    flex: 1;
+    flex: 2;
     overflow: auto;
 }
 
@@ -140,5 +140,14 @@ iframe {
   
   #myBtn:hover {
     background-color: darkgray; /* Add a dark-grey background on hover */
+  }
+  
+
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+
+
   }
   
