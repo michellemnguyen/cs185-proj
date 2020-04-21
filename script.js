@@ -23,7 +23,7 @@ function topFunction() {
 
 // Open the Modal
 function openModal() {
-    document.getElementById("myModal").style.display = "inline-block";
+    document.getElementById("myModal").style.display = "flex";
 }
   
 // Close the Modal
@@ -64,7 +64,7 @@ function showSlides(n) {
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideIndex-1].style.display = "block";
+    slides[slideIndex-1].style.display = "flex";
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
 }
