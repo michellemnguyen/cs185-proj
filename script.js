@@ -23,7 +23,7 @@ function topFunction() {
 
 // Open the Modal
 function openModal() {
-    document.getElementById("myModal").style.display = "block";
+    document.getElementById("myModal").style.display = "inline-block";
 }
   
 // Close the Modal
