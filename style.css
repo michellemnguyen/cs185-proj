@@ -25,7 +25,7 @@ li {
 
 .nav:link, .nav:visited {
     background-color: inherit;
-    border-bottom: 2px solid darkgray;
+    border-bottom: 3px solid darkgray;
     color: black;
     padding: 8px 24px;
     text-align: center;
@@ -43,7 +43,7 @@ li {
 
 .current {
     background-color: inherit;
-    border-bottom: 2px solid rgb(68, 190, 190);
+    border-bottom: 3px solid rgb(68, 190, 190);
     color: black;
     padding: 8px 24px;
     text-align: center;
@@ -57,6 +57,11 @@ li {
     text-decoration: none;
 }
 
+h1 {
+    padding: 0px;
+    margin: 0px;
+}
+
 h2 {
     padding: 0px;
     margin: 0px;
@@ -66,7 +71,8 @@ h2 {
     background-color: white;
     text-align: center;
     font-size: 24px;
-    margin: auto;
+    padding: 10px;
+    margin: 20px 0px 20px 0px;
 }
   
 /* flex container */
@@ -81,6 +87,7 @@ h2 {
     background-color: white;
     padding: 20px;
     flex: 1;
+    overflow: auto;
 }
 
 /* flex child 1/2's */
@@ -117,7 +124,7 @@ iframe {
 
 
 #myBtn {
-    display: block; /* Hidden by default */
+    display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */

@@ -4,6 +4,7 @@
         <!-- Including Google Fonts API -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Nunito:bold">
         <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="modal.css" />
         <title>Michelle's CS 185 Project</title>
         <link rel="icon" href="favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +12,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
     <body>
+      
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
         <!-- Nav Bar -->
         <header>
@@ -53,21 +56,42 @@
           <div class="lowerBody">
             <div class="article3">
               <h2>Helsingborg, Sweden</h2><br>
-              <img src="images/helsingborg.jpeg">
+              <img src="images/helsingborg.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow">
             </div>
             <div class="article3">
               <h2>Brussels, Belgium</h2><br>
-              <img src="images/brussels-wide.jpeg">
+              <img src="images/brussels-wide.jpeg" onclick="openModal();currentSlide(2)" class="hover-shadow">
             </div>
             <div class="article3">
               <h2>Lund, Sweden</h2><br>
-              <img src="images/uni-lib.jpeg">
+              <img src="images/uni-lib.jpeg" onclick="openModal();currentSlide(3)" class="hover-shadow">
             </div>
+          </div>
+          
+          <!-- The Modal/Lightbox -->
+          <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
 
+              <div class="mySlides">
+                <img src="images/helsingborg.jpeg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <img src="images/brussels-wide.jpeg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <img src="images/uni-lib.jpeg" style="width:100%">
+              </div>
+
+              <!-- Next/previous controls -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+            </div>
           </div>
 
-          <!-- <div class="row">
-
-          </div> -->
-    </body>
+        </body>
 </html>
